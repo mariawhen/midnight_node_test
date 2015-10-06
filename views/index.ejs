@@ -10,9 +10,7 @@
   </head>
   <body>
 
-
-
- <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <a class="navbar-brand" href="#">Midnight!</a>
     <ul class="nav navbar-nav">
       <li class="active">
@@ -24,13 +22,14 @@
     </ul>
   </nav>
 
-  <div class="jumbotron">
+  <div class="jumbotron" data-midnight="pink">
     <h1>hey</h1>
-    <div data-midnight="red">
+    <div>
       <h1>Hey</h1>
     </div>
   </div>
-<section data-midnight="white">
+
+  <section data-midnight="white">
     <h1>A section with a dark background, so a white nav would look better here</h1>
   </section>
 
@@ -56,13 +55,13 @@
 
 
 
-    <script>
-      // Start midnight
-         $(document).ready(function(){
-        // Change this to the correct selector for your nav.
-        $('nav.navbar-fixed-top').midnight();
-      });
-    </script>
+  <script>
+    // Start midnight
+       $(document).ready(function(){
+      // Change this to the correct selector for your nav.
+      $('nav.navbar-fixed-top').midnight();
+    });
+  </script>
 
 
 
